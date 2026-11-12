@@ -1,0 +1,11 @@
+{
+  "courses": [
+    {
+      "id": "1001",
+      "name": "Programación III",
+      "courseState": "ACTIVE",
+      "alternateLink": "https://classroom.google.com/c/TEST1001"
+    }
+  ],
+  "nextPageToken": "page-2"
+}

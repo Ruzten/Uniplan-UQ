@@ -1,0 +1,16 @@
+{
+  "courses": [
+    {
+      "id": "1002",
+      "name": "Cálculo integral",
+      "courseState": "ACTIVE",
+      "alternateLink": "https://classroom.google.com/c/TEST1002"
+    },
+    {
+      "id": "1003",
+      "name": "Semillero de robótica",
+      "courseState": "ACTIVE",
+      "alternateLink": "https://classroom.google.com/c/TEST1003"
+    }
+  ]
+}

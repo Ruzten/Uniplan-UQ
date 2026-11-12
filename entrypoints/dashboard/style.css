@@ -1,0 +1,225 @@
+@import "tailwindcss";
+
+/*
+ * Uniplan UQ — design system "Black Teal".
+ * Flat dark UI: neutral black surfaces, 1px borders, no shadows, teal accent.
+ * Components use token names only; never a raw hex.
+ */
+@theme {
+  --color-bg: #000000;
+  --color-surface: #0a0a0a;
+  --color-surface-2: #161616;
+  --color-border: #242424;
+  --color-text: #ededed;
+  --color-muted: #a1a1a1;
+  --color-accent: #2dd4bf;
+  --color-success: #a3e635;
+  --color-info: #60a5fa;
+  --color-warning: #fbbf24;
+  --color-danger: #f87171;
+  --color-blocked: #525252;
+  --font-sans: "Segoe UI Variable", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "Cascadia Code", Consolas, monospace;
+  --radius-card: 16px;
+  --radius-control: 10px;
+  --text-xs: 12px;
+  --text-sm: 13px;
+  --text-base: 14px;
+  --text-md: 16px;
+  --text-lg: 20px;
+  --text-xl: 28px;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-variant-numeric: tabular-nums;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+@layer base {
+  input,
+  select,
+  textarea,
+  button {
+    font: inherit;
+  }
+}
+
+button:not(:disabled),
+select:not(:disabled),
+input[type="checkbox"]:not(:disabled) {
+  cursor: pointer;
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border) transparent;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+@layer components {
+  /* Surfaces */
+  .card {
+    @apply rounded-card border border-border bg-surface p-6;
+  }
+
+  .card-title {
+    @apply text-md font-bold tracking-tight;
+  }
+
+  .section-title {
+    @apply text-lg font-extrabold tracking-tight;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold tracking-wider text-muted uppercase;
+  }
+
+  .hint {
+    @apply text-sm text-muted;
+  }
+
+  .empty {
+    @apply rounded-card border border-dashed border-border px-6 py-8 text-center text-muted;
+  }
+
+  /* Form controls */
+  .field-label {
+    @apply flex flex-col gap-1;
+  }
+
+  .field-label > span:first-child {
+    @apply text-sm font-medium text-muted;
+  }
+
+  .field {
+    @apply w-full rounded-control border border-border bg-bg px-3 py-2 text-text placeholder:text-muted/60 hover:border-muted/40 focus-visible:border-accent;
+  }
+
+  .field[aria-invalid="true"] {
+    @apply border-danger;
+  }
+
+  .check {
+    @apply size-4 accent-accent;
+  }
+
+  /* Buttons */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-control border border-border bg-surface-2 px-4 py-2 font-medium whitespace-nowrap text-text transition-transform duration-150 ease-out hover:border-muted/40 active:scale-98 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .btn-primary {
+    @apply border-accent bg-accent font-semibold text-bg hover:border-accent hover:opacity-90;
+  }
+
+  .btn-danger {
+    @apply border-danger/40 text-danger hover:border-danger hover:bg-danger/10;
+  }
+
+  .btn-solid-danger {
+    @apply border-danger bg-danger font-semibold text-bg hover:border-danger hover:opacity-90;
+  }
+
+  .btn-ghost {
+    @apply border-transparent bg-transparent text-muted hover:border-transparent hover:bg-surface-2 hover:text-text;
+  }
+
+  .btn-sm {
+    @apply gap-1 px-3 py-1 text-sm;
+  }
+
+  /* Segmented control: buttons inside toggle with aria-pressed */
+  .segmented {
+    @apply inline-flex gap-1 rounded-control border border-border bg-surface p-1;
+  }
+
+  .segmented > button {
+    @apply rounded-control px-4 py-1 font-medium text-muted hover:text-text aria-pressed:bg-surface-2 aria-pressed:text-accent;
+  }
+
+  /* Badges */
+  .badge {
+    @apply inline-flex shrink-0 items-center gap-1 rounded-full border border-border px-2 py-0.5 text-xs font-medium whitespace-nowrap text-muted;
+  }
+
+  /* Tables */
+  .data-table {
+    @apply w-full border-collapse text-sm;
+  }
+
+  .data-table th {
+    @apply border-b border-border px-3 py-2 text-left text-xs font-semibold tracking-wider text-muted uppercase;
+  }
+
+  .data-table td {
+    @apply border-b border-border px-3 py-2 text-left;
+  }
+
+  .data-table tbody tr:last-child td {
+    @apply border-b-0;
+  }
+
+  /* Entrance motion for a freshly mounted view */
+  .fade-in {
+    animation: fade-in 150ms ease-out both;
+  }
+
+  .view-enter {
+    animation: view-enter 150ms ease-out both;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes view-enter {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none;
+    animation: none;
+  }
+}

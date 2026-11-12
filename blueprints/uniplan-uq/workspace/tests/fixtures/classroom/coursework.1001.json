@@ -1,0 +1,36 @@
+{
+  "courseWork": [
+    {
+      "courseId": "1001",
+      "id": "cw1",
+      "title": "Parcial 2 - Árboles",
+      "description": "Evaluación escrita.",
+      "state": "PUBLISHED",
+      "alternateLink": "https://classroom.google.com/c/TEST1001/a/cw1",
+      "maxPoints": 100,
+      "workType": "ASSIGNMENT",
+      "dueDate": { "year": 2026, "month": 11, "day": 20 },
+      "dueTime": { "hours": 23, "minutes": 59 }
+    },
+    {
+      "courseId": "1001",
+      "id": "cw2",
+      "title": "Taller de listas",
+      "state": "PUBLISHED",
+      "alternateLink": "https://classroom.google.com/c/TEST1001/a/cw2",
+      "maxPoints": 50,
+      "workType": "ASSIGNMENT"
+    },
+    {
+      "courseId": "1001",
+      "id": "cw3",
+      "title": "Quiz 3",
+      "state": "PUBLISHED",
+      "alternateLink": "https://classroom.google.com/c/TEST1001/a/cw3",
+      "maxPoints": 10,
+      "workType": "ASSIGNMENT",
+      "dueDate": { "year": 2026, "month": 11, "day": 18 },
+      "dueTime": { "hours": 1 }
+    }
+  ]
+}

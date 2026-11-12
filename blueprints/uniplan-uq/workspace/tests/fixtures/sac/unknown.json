@@ -1,0 +1,12 @@
+{
+  "_comment": "MUESTRA SINTETICA. Tabla que ningun clasificador debe reconocer.",
+  "url": "https://sac.uniquindio.edu.co/sgacampus/pagos",
+  "title": "SAC - Estado de cuenta (muestra sintetica)",
+  "capturedAt": "2026-11-10T23:00:00.000Z",
+  "tables": [
+    {
+      "headers": ["Concepto", "Valor", "Fecha límite"],
+      "rows": [["Derechos complementarios", "0", "2026-12-01"]]
+    }
+  ]
+}

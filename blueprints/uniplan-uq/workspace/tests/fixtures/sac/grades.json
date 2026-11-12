@@ -1,0 +1,22 @@
+{
+  "_comment": "MUESTRA SINTETICA. No proviene del SAC real. Misma forma que produce captureSac().",
+  "url": "https://sac.uniquindio.edu.co/sgacampus/notas",
+  "title": "SAC - Notas registradas (muestra sintetica)",
+  "capturedAt": "2026-11-10T23:00:00.000Z",
+  "tables": [
+    {
+      "headers": ["Asignatura", "Grupo", "Nota 1", "Nota 2", "Definitiva"],
+      "rows": [
+        ["Cálculo integral", "01", "3,8", "4,2", ""],
+        ["Programación III", "02", "4,5", "", ""]
+      ]
+    },
+    {
+      "headers": ["Materia", "Parcial 1", "Nota definitiva"],
+      "rows": [
+        ["Sistemas de Información", "4,0", ""],
+        ["Electiva Deportiva", "5,0", "5,0"]
+      ]
+    }
+  ]
+}

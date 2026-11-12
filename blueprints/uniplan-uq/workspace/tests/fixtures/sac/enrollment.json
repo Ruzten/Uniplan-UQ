@@ -1,0 +1,17 @@
+{
+  "_comment": "MUESTRA SINTETICA. Codigos y creditos inventados para la prueba; no son datos oficiales.",
+  "url": "https://sac.uniquindio.edu.co/sgacampus/matricula",
+  "title": "SAC - Matricula individual (muestra sintetica)",
+  "capturedAt": "2026-11-10T23:00:00.000Z",
+  "tables": [
+    {
+      "headers": ["Código", "Asignatura", "Créditos", "Grupo", "Periodo"],
+      "rows": [
+        ["TEST-301", "Cálculo integral", "3", "01", "2026-2"],
+        ["TEST-402", "Programación III", "4", "02", "2026-2"],
+        ["TEST-505", "Sistemas de Información", "3", "01", "2026-2"],
+        ["TEST-606", "Infraestructura computacional", "3", "01", "2026-2"]
+      ]
+    }
+  ]
+}

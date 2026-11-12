@@ -1,0 +1,29 @@
+{
+  "courseWorkMaterial": [
+    {
+      "courseId": "1001",
+      "id": "m1",
+      "title": "Acta de concertación 2026-2",
+      "state": "PUBLISHED",
+      "alternateLink": "https://classroom.google.com/c/TEST1001/m/m1",
+      "materials": [
+        {
+          "driveFile": {
+            "driveFile": {
+              "id": "f1",
+              "title": "acta.pdf",
+              "alternateLink": "https://drive.google.com/file/d/TESTf1/view"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "courseId": "1001",
+      "id": "m2",
+      "title": "Diapositivas semana 3",
+      "state": "PUBLISHED",
+      "alternateLink": "https://classroom.google.com/c/TEST1001/m/m2"
+    }
+  ]
+}

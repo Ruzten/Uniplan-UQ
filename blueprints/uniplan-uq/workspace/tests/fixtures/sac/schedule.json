@@ -1,0 +1,17 @@
+{
+  "_comment": "MUESTRA SINTETICA. No proviene del SAC real. Misma forma que produce captureSac().",
+  "url": "https://sac.uniquindio.edu.co/sgacampus/horario",
+  "title": "SAC - Horario del estudiante (muestra sintetica)",
+  "capturedAt": "2026-11-10T23:00:00.000Z",
+  "tables": [
+    {
+      "headers": ["Asignatura", "Grupo", "Día", "Hora inicio", "Hora fin", "Aula"],
+      "rows": [
+        ["Cálculo integral", "01", "Lunes", "18:00", "20:00", "B-201"],
+        ["Cálculo integral", "01", "Miércoles", "18:00", "20:00", "B-201"],
+        ["Programación III", "02", "Martes", "20:00", "22:00", "Sala 3"],
+        ["Electiva Deportiva", "01", "Sábado", "8:00", "10:00", "Coliseo"]
+      ]
+    }
+  ]
+}

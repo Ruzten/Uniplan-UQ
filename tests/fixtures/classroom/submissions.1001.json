@@ -1,0 +1,24 @@
+{
+  "studentSubmissions": [
+    {
+      "courseId": "1001",
+      "courseWorkId": "cw1",
+      "id": "s1",
+      "state": "RETURNED",
+      "assignedGrade": 85
+    },
+    {
+      "courseId": "1001",
+      "courseWorkId": "cw2",
+      "id": "s2",
+      "state": "TURNED_IN",
+      "draftGrade": 40
+    },
+    {
+      "courseId": "1001",
+      "courseWorkId": "cw3",
+      "id": "s3",
+      "state": "CREATED"
+    }
+  ]
+}
